@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    background-color: brown;
+    display: flex; /*ATIVA O FLEXBOX*/
+    flex-direction: column;/*row, column*/
+    flex-wrap: wrap;/*wrap - indica se poder quebrar linha se não houver espaço - è bom ser usado quando vc possui medida par aos elementos filhos*/
+    /* flex-flow: row wrap; -> Atalho para definir o flex-direction e o flex-wrap */
+
+    /* end, start, center, space-between(espaços entre), space-around(valores proporcionais), space-evenly(mesma valor) */
+    justify-content: space-around;/*ajustar as propriedades no eixo principal*/
+    padding: 12px;
+    /*tem por padrão stretch*/
+}
+
+.item-1{
+    background-color: orange;
+}
+.item-2{
+    background-color: green;
+    
+}
+.item-3{
+    background-color: hotpink;
+}
+.item-4{
+    background-color: blue;
+}
+.item-1, .item-2, .item-3, .item-4{
+    width: 200px;
+    padding: 8px;
+}
+.container-2{
+    background-color: chocolate;
+    height: 250px;
+    display: flex;
+}
+
+.coluna-1{
+    background-color: tan;
+    width: 200px;
+}
+.coluna-2{
+    background-color: aqua;
+    flex: 1;
+
+}
+.coluna-3{
+    background-color: tomate;
+}
